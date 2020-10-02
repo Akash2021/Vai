@@ -39,5 +39,5 @@ def wishme():
 	 else :
 	 	speak("Good Evening!")
 def openn(query):
-    #use jellyfish
+    
 	webbrowser.open(f'{query}.com')
