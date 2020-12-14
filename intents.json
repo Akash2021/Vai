@@ -1,0 +1,151 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey",
+        "Hello,",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye","good bye"],
+      "responses": [
+        "Have a nice day",
+        "Bye! See you again again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "Search",
+      "patterns": [
+        "Where is Delhi located",
+        "What is NSIT",
+        "Who is Joe Biden",
+        "Who is Ambani",
+        "Search for Nsut",
+        "Search for Modi on google",
+        "Make a google search for DeathNote"
+      ],
+      "responses": [
+        "Searching"
+      ]
+    },
+    {
+      "tag": "SetUserName",
+      "patterns": [
+        "I want to set user name",
+        "Change my user name",
+        "set my user name",
+        "Setusername",
+        "I want to set my username"
+      ],
+      "responses": [
+        "User name is set"
+      ]
+    },
+    {
+      "tag": "restart",
+      "patterns": [
+        "Restart the computer",
+        "Please restart the computer",
+        "Restart"
+      ],
+      "responses": [
+        "Restart"
+      ]
+    },
+    {
+      "tag": "shutdown",
+      "patterns": [
+        "shutdown the computer",
+        "Please shutdown the computer",
+        "Shutdown",
+        "turn off the computer",
+        "Please turn off the computer",
+        "turn off"
+
+      ],
+      "responses": [
+        "Shutting down"
+      ]
+    },
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?",
+        "Lets hear a joke",
+        "Make me laugh",
+        "Do you know something funny"
+      ],
+      "responses": [
+        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+        "What did the buffalo say when his son left for college? Bison."
+      ]
+    },
+    {
+      "tag": "TimeTable",
+      "patterns": [
+        "Show me timetable",
+        "Show me time table",
+        "Show me the time table",
+        "What is my time table?",
+        "What is my time table?"
+      ],
+      "responses": [
+        "This is the timetable"
+      ]
+    },
+    {
+      "tag": "Howareyou",
+      "patterns": [
+        "How are you doing",
+        "How are you ",
+        "how have you been"
+      ],
+      "responses": [
+        "I am good Wbu?"
+      ]
+    },
+    {
+      "tag": "aboutyourself",
+      "patterns": [
+        "Tell me about yourself",
+        "Who are you ",
+        "What are you",
+        "What is your name"
+      ],
+      "responses": [
+        "I am a voice assistant created by Akash, Ankit, Abhishek and Rahul as a BTP project"
+      ]
+    },
+    {
+      "tag": "open",
+      "patterns": [
+        "open youtube",
+        "please open facebook",
+        "open yahoo please",
+        "open nsit"
+      ],
+      "responses": [
+        "opening"
+      ]
+    }
+
+  ]
+}
