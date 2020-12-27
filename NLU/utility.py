@@ -15,25 +15,6 @@ engine = pyttsx3.init();
 file1 = open("websitelist.txt","r") 
 uname=""
 
-def wishme():
-     print("hello")
-     hour = int(datetime.datetime.now().hour)
-     if hour>=0 and hour <12:
-        if uname=="":
-            speak("Good Morning!")
-        else:
-            speak(f'Good Morning {uname}')
-     elif hour>=12 and hour <18:
-        if uname=="":
-            speak("Good Afternoon")
-        else:
-            speak(f'Good Afternoon {uname}')
-
-     else :
-        if uname=="":
-            speak("Good Evening!")
-        else:
-            speak(f'Good Evening! {uname}')
 
 def setusername():
     speak("What should i call you ")
@@ -67,28 +48,6 @@ def find(s1):
             ma=temp
     return ans
 
-def speak(audio):
-	engine.say(audio) 
-	engine.runAndWait()
-
-def takeCommand():
-    """It takes microphone input from the user and returns string output"""
-
-    r = sr.Recognizer()
-    with sr.Microphone() as source:
-        print("Listening...")
-        r.pause_threshold = 1
-        audio = r.listen(source)
-    try:
-        print("Recognizing...")    
-        query = r.recognize_google(audio, language='en-in') #Using google for voice recognition.
-        print(f"User said: {query}\n")  #User query will be printed.
-
-    except Exception as e:
-        # print(e)    
-        print("Say that again please...")   #Say that again will be printed in case of improper voice 
-        return "None" #None string will be returned
-    return query
 
 def openn(query):
     query=(find(preprocess(query)))

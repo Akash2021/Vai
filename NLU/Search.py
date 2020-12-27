@@ -1,9 +1,9 @@
-import wolframalpha
+#import wolframalpha
 import wikipedia
 import requests
 
-appId = '6X8X7P-KT2PJ3TXPR'
-client = wolframalpha.Client(appId)
+#appId = ''
+#client = wolframalpha.Client(appId)
 
     
 
