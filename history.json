@@ -1,0 +1,53 @@
+{
+  "intents": [
+    {
+      "tag": "1",
+      "patterns": [
+        "Medium"
+      ],
+      "responses": [
+        "https://medium.com/"
+      ]
+    },
+    {
+      "tag": "2",
+      "patterns": ["how to declare 2d vector in c++"],
+      "responses": [
+        "https://www.geeksforgeeks.org/2d-vector-in-cpp-with-user-defined-size/"
+      ]
+    },
+    {
+      "tag": "3",
+      "patterns": ["pnb net banking"],
+      "responses": ["https://www.netpnb.com/index.html"]
+    },
+    {
+      "tag": "4",
+      "patterns": [
+        "hacknagpur"
+      ],
+      "responses": [
+        "https://hacknagpur.tech/"
+      ]
+    },
+    {
+      "tag": "5",
+      "patterns": [
+        "python move file using os"
+      ],
+      "responses": [
+        "https://stackabuse.com/how-to-create-move-and-delete-files-in-python/"
+      ]
+    },
+    {
+      "tag": "6",
+      "patterns": [
+        "delhi aqi"
+      ],
+      "responses": [
+        "https://aqicn.org/city/delhi/"
+      ]
+    }
+
+  ]
+}

@@ -43,10 +43,14 @@ def speech():
 	global query 
 	# query="hello"
 	query=speech2text()
+	print("hi")
+	print(query)
 	return render_template('speech.html',query=query)	
 
 @app.route('/nlu')
 def nlu():
+	print(query)
+	print("hello")
 	result=nl(query)
 	# result=query
 	return render_template('nlu.html',result=result)
@@ -71,4 +75,4 @@ def nlu():
 
 
 if __name__ == '__main__':
-	app.run(debug=True,port=3001)
+	app.run(debug=True,port=3006)

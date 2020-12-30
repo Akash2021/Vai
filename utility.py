@@ -11,6 +11,18 @@ en_stops = set(stopwords.words('english'))
 en_stops.add("please")
 
 file1 = open("websitelist.txt","r") 
+uname=""
+
+
+def setusername():
+    speak("What should i call you ")
+    global uname
+    uname = takeCommand()
+    speak(f'Your name is set to {uname}' ) 
+    speak(f'Do you want to change it?')
+    command=takeCommand()
+    if command=="yes" or command=="yeah" :
+        setusername()
         
 def preprocess(query):
     query=query.lower()

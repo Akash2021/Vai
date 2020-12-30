@@ -1,15 +1,12 @@
 import time
 from recordaudio import recordvoice
-from predict import *   
-import warnings
-warnings.filterwarnings("ignore")
+from predict import predict_audio   
 def speech2text():
     audio=recordvoice()
-    with open('speech.wav','wb') as f:
-    	f.write(audio.get_wav_data())
-    query=predicts_audio('speech.wav')
+    query=predict_audio(audio)
     # if query !="None":
-#    print('h1'+query)
+    time.sleep(0.5)
+    print(query)
     return query
             
 if __name__ == '__main__':

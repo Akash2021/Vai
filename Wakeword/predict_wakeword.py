@@ -1,10 +1,3 @@
-import numpy as np
-import torch
-import torchaudio
-import librosa
-from model_wakeword import *
-import warnings
-warnings.filterwarnings("ignore")
 def predict_audio(audio):
 	import speech_recognition as sr
 	r = sr.Recognizer()
@@ -22,14 +15,10 @@ def predict_audio(audio):
 
 
 def infrence(sample):
-  
-  net=NN2DMEL(35)
-  net.load_state_dict(torch.load('Wakeword/Wakeword_happy.pth'))
-  net.eval()
   waveform, sample_rate =librosa.load(sample,sr=16000)
-  # print(waveform.shape)
+  print(waveform.shape)
   waveform,index=librosa.effects.trim(waveform)
-  # print(waveform.shape)
+  print(waveform.shape)
   waveform=librosa.util.fix_length(waveform, 16000, mode='constant')
   waveform=np.transpose(waveform)
   waveform=np.expand_dims(waveform, axis=0)
@@ -39,4 +28,3 @@ def infrence(sample):
   outputs = net(spectogram)
   _, predicted = torch.max(outputs.data, 1)
   print(predicted)
-  return predicted
