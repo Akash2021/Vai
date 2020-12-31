@@ -2,7 +2,7 @@ import webbrowser
 import sys
 import argparse
 from os.path import join, realpath
-from flask import Flask, render_template, jsonify,request
+from flask import Flask, render_template, jsonify,request, url_for,redirect
 from flask_sqlalchemy import SQLAlchemy
 import warnings
 import os
@@ -21,9 +21,6 @@ app = Flask(__name__)
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///test.db'
 
 # db=SQLAlchemy(app)
-
-
-
 
 # query=""
 @app.route('/',methods=['GET','POST'])
@@ -54,6 +51,19 @@ def nlu():
 	result=nl(query)
 	# result=query
 	return render_template('nlu.html',result=result)
+
+formData = {'username':[],'password':[]}
+usernameList = []
+passwordList = []
+@app.route('/history',methods=['GET','POST'])
+def history():
+	if request.method == 'POST':
+		usernameList.append(request.form['username'])
+		passwordList.append(request.form['password'])
+		formData = {'username' : usernameList,'password' : passwordList}
+		print(formData)
+	return render_template('history.html') 
+
 
 # @app.route('/test')
 # def test():
