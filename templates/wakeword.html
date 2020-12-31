@@ -1,17 +1,180 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<script>
-		function myFunction() {
-		  location.replace("/speech")
-		}
-</script>
-	<title></title>
-</head>
-<body>
-	Wakeword Detected 
-	<script type="text/javascript">
-		myFunction();
-	</script>
-</body>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Voice Recognition</title>
+		<style>
+			*{
+				box-sizing: border-box;
+				padding:0;
+				margin:0;
+			}
+
+			body{
+				display: flex;
+				flex-direction: column;
+			}
+
+			.header{
+				width:100%;
+				height:65px;
+				padding: 5px 5px;
+				background-color: #8a63bd;
+				display: flex;
+			}
+
+			.heading{
+				display: flex;
+				align-items: center;
+			}
+
+			#logo-img{
+				height:100%;
+			}
+
+			h1{
+				padding-left: 10px;
+				color:#ffffff;
+				text-align: center;
+			}
+
+			.main{
+				width:100%;
+				display: flex;
+			}
+
+			.content{
+				height:640px;
+				width:96%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: #271c35;
+			}
+
+			.nav-bar{
+				border-right: 1px solid #333333;
+				height:640px;
+				width:4%;
+				background-color: #dddbdbfa;	
+			}
+			
+			.nav-list{
+				list-style: none;
+			}
+
+			li{
+				height:50px;
+				padding:3px;
+				margin:10px 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			li:hover{
+				background-color: #646262;
+				cursor: pointer;
+			}
+
+			#nav-home{
+				background-color: #8a63bd;
+			}
+
+			#nav-home:hover{
+				background-color: #af96cf;
+			}
+
+			.nav-img{
+				width:100%;
+				height:100%;
+			}
+
+			#history{
+				width:90%;
+				height:90%;
+			}
+
+			#link{
+				width:75%;
+				height:75%;
+			}
+
+			.content-body{
+				width:100%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				padding:35px;
+			}
+
+			#start-bttn{
+				width:160px;
+				height:160px;
+				border:3px solid #EC9ED3;
+				border-radius: 50%;
+				font-size: 1.4em;
+				color:#ffffff;
+				background-color: #271c35;
+			}
+
+			#start-bttn:hover{
+				background-color: #675085;
+				cursor: pointer;
+			}
+
+			#start-buttn:focus{
+				background-color: #614056;
+			}
+
+			.response{
+				color:#ffffff;
+				font-size: 1.5em;
+				width:100%;
+				min-height:100px;
+				display:flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				border:2px solid #ffffff;
+				margin:50px;
+				padding:25px;
+			}
+		</style>
+		
+		<script>
+			function myFunction() {
+		  		location.replace("/speech")
+			}
+		</script>
+	</head>
+	<body>
+		<div class="header">
+			<img id="logo-img" src="{{url_for('static',filename='logo.png')}}" alt="">
+			<div class="heading"><h1>AI Voice Assistant</h1></div>
+		</div>
+		<div class="main">
+			<div class="nav-bar">
+				<ul class="nav-list">
+					<li id="nav-home" onclick="homeFunction()"><img class="nav-img" id="home" src="{{url_for('static',filename='home.png')}}" alt=""></li>
+					<li id="nav-history" onclick="historyFunction()"><img class="nav-img" id="history" src="{{url_for('static',filename='history.png')}}" alt=""></li>
+					<a href="https://github.com/Akash2021/Vai" target="_blank"><li id="nav-link" ><img class="nav-img" id="link" src="{{url_for('static',filename='link.png')}}" alt=""></li></a>
+				</ul>	
+			</div>
+			<div class="content">
+				<div class="content-body">
+					<form method="post", action="\">
+						<input id="start-bttn" type="submit" value="Start" />
+					</form>
+					<div class="response">
+						<p id="response-message">Wakeword Detected</p>
+					</div>
+					<script type="text/javascript">
+						myFunction();
+					</script>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
