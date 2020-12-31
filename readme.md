@@ -16,7 +16,7 @@ For Windows:
  For Linux or Mac:
   ```
   python3 -m venv ocr-env
-  source tutorial-env/bin/activate
+  source ocr-env/bin/activate
  ``` 
  * #### To install all the requirements go into the directory of flask_api and run the following command
  ```
