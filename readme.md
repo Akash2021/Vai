@@ -36,9 +36,9 @@ For Windows:
 
  * #### Now run app.py from the same directory
  * #### Click on the link that is displayed in the terminal, after that your AI Voice Assistant should get opened as a Web Application 
-  <img src="./Screenshots/index.jpeg" width="248">
-  <img src="./Screenshots/wakeword.jpeg" width="248">
-  <img src="./Screenshots/speechtotext.jpeg" width="248">
-  <img src="./Screenshots/result.jpeg" width="248">
+  <img src="./Screenshots/index.jpeg" width="500">
+  <img src="./Screenshots/wakeword.jpeg" width="500">
+  <img src="./Screenshots/speechtotext.jpeg" width="500">
+  <img src="./Screenshots/result.jpeg" width="500">
   
   #### Have fun using your new and easy to use privacy friendly Voice Assisstant !!!
