@@ -2,22 +2,7 @@ import deepspeech
 import wave
 import numpy as np
 from pydub import AudioSegment as am
-
-def predict_audio(audio):
-	import speech_recognition as sr
-	r = sr.Recognizer()
-	try:
-		print("Recognizing...")    
-		query = r.recognize_google(audio, language='en-in')
-		print(f"User said: {query}\n")  #User query will be printed.
-
-	except Exception as e:
-        # print(e)    
-		print("Say that again please...")   #Say that again will be printed in case of improper voice 
-		return "None" #None string will be returned
-	print(query)
-	return query
-
+import time
 
 def predicts_audio(audio):
 	w = wave.open(audio, 'r')
@@ -32,6 +17,7 @@ def predicts_audio(audio):
 	data16 = np.frombuffer(buffer, dtype=np.int16)
 	text = model.stt(data16)
 	print(text)
+	return (text)
 
 if __name__ == '__main__':
-	predicts_audio('arctic_a0001.wav')
+	predicts_audio('speech.wav')

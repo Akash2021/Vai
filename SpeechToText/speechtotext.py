@@ -6,7 +6,6 @@ def speech2text():
     query=predict_audio(audio)
     # if query !="None":
     time.sleep(0.5)
-    print(query)
     return query
             
 if __name__ == '__main__':
