@@ -20,7 +20,11 @@
 				width:100%;
 				height:65px;
 				padding: 5px 5px;
+<<<<<<< HEAD
 				background-color: #ddc1d3;
+=======
+				background-color: #8a63bd;
+>>>>>>> 6d6c9b7b03e726627ef554c763061518f3753c6b
 				display: flex;
 			}
 
@@ -35,7 +39,11 @@
 
 			h1{
 				padding-left: 10px;
+<<<<<<< HEAD
 				color:#333333;
+=======
+				color:#ffffff;
+>>>>>>> 6d6c9b7b03e726627ef554c763061518f3753c6b
 				text-align: center;
 			}
 
@@ -50,7 +58,11 @@
 				display: flex;
 				justify-content: center;
 				align-items: center;
+<<<<<<< HEAD
 				background-color: #4F3447;
+=======
+				background-color: #271c35;
+>>>>>>> 6d6c9b7b03e726627ef554c763061518f3753c6b
 			}
 
 			.nav-bar{
@@ -96,11 +108,14 @@
 				height:90%;
 			}
 
+<<<<<<< HEAD
 			#details{
 				width:75%;
 				height:75%;
 			}
 
+=======
+>>>>>>> 6d6c9b7b03e726627ef554c763061518f3753c6b
 			#link{
 				width:75%;
 				height:75%;
@@ -158,15 +173,23 @@
 				<ul class="nav-list">
 					<li id="nav-home" onclick="homeFunction()"><img class="nav-img" id="home" src="{{url_for('static',filename='home.png')}}" alt=""></li>
 					<li id="nav-history" onclick="historyFunction()"><img class="nav-img" id="history" src="{{url_for('static',filename='history.png')}}" alt=""></li>
+<<<<<<< HEAD
 					<li id="nav-details" onclick="detailsFunction()"><img class="nav-img" id="details" src="{{url_for('static',filename='details.png')}}" alt=""></li>
 					<li id="nav-link" onclick="detailsFunction()"><img class="nav-img" id="link" src="{{url_for('static',filename='link.png')}}" alt=""></li>
+=======
+					<a href="https://github.com/Akash2021/Vai" target="_blank"><li id="nav-link" ><img class="nav-img" id="link" src="{{url_for('static',filename='link.png')}}" alt=""></li></a>
+>>>>>>> 6d6c9b7b03e726627ef554c763061518f3753c6b
 				</ul>	
 			</div>
 			<div class="content">
 				<div class="content-body">
 					<form id="login-form" method="post", action="/history">
                         <p id="username-field">Username<br><br><input type="text" name="username"/></p>
+<<<<<<< HEAD
                         <p id="password-field">Password<br><br><input type="text" name="password" /></p>
+=======
+                        <p id="password-field">Password<br><br><input type="password" name="password" /></p>
+>>>>>>> 6d6c9b7b03e726627ef554c763061518f3753c6b
                         <input id="submit-bttn" type="submit" value="Sign in" form="login-form" />
 					</form>
 				</div>
@@ -174,6 +197,7 @@
         </div>
         <script type="text/javascript">
 			function homeFunction(){
+<<<<<<< HEAD
 				location.replace('/')
 			};
 			function historyFunction(){
@@ -182,3 +206,13 @@
 		</script>
 	</body>
 </html>
+=======
+				location.replace('/');
+			}
+			function historyFunction(){
+				location.replace('/history');
+			}
+		</script>
+	</body>
+</html>
+>>>>>>> 6d6c9b7b03e726627ef554c763061518f3753c6b
