@@ -1,11 +1,11 @@
-## This is a AI Voice Assisstant based on Deep Learning which runs on flask at its backend
+## This is an AI Voice Assistant based on Deep Learning which runs on flask at its backend
 
 
 
 # Steps to run this
 *  #### Clone the repository in a local directory
 *  #### Create a Virtual Environment on your machine
-* #### To create Virtual Environment on your machine use the following commands
+* #### To create a  Virtual Environment on your machine use the following commands
 
 For Windows:
  ```
@@ -41,4 +41,4 @@ For Windows:
   <img src="./Screenshots/speechtotext.jpeg" width="500">
   <img src="./Screenshots/result.jpeg" width="500">
   
-  #### Have fun using your new and easy to use privacy friendly Voice Assisstant !!!
+  #### Have fun using your new and easy to use privacy friendly Voice Assistant !!!
